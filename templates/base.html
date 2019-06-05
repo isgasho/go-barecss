@@ -1,0 +1,49 @@
+{{define "base"}}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="/css/bare.min.css" rel="stylesheet" />
+    <link href="/css/icss.css" rel="stylesheet">
+    <link href="/css/icons.css" rel="stylesheet">
+    {{ template "stylesheets" . }}
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {{ template "css" . }}
+    <title>Hello Go!</title>
+  </head>
+<body>
+  <nav fx="">
+    <label>
+      <input type="checkbox">
+      <header>
+        <a href="/"><b>Hello</b>Go!</a>
+      </header>
+      
+      <ul>
+        <li><a href="https://github.com/prologic/go-barecss">Github</a></li>
+      </ul>
+    </label>
+  </nav>
+  <section>
+    {{template "content" .}}
+  </section>
+<footer>
+  <grid>
+    <div col="1/2">
+      <p>Created by <a att href="https://github.com/prologic" target="_blank">James Mills</a></p>
+    </div>
+    
+    <div col="1/2" txt="r">
+      <a att href="httpss://github.com/prologic/go-barecss" target="_blank">
+        <i class="icss-github-c"></i>
+      </a>
+    </div>
+  </grid>
+</footer>
+</body>
+<script src="https://cdn.rawgit.com/Kimeiga/bahunya/26313661/prism.js"></script>
+{{ template "scripts" . }}
+</html>
+{{end}}
+{{ define "css" }}{{ end }}
+{{ define "scripts" }}{{ end }}
+{{ define "stylesheets" }}{{ end }}

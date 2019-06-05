@@ -1,0 +1,25 @@
+{{define "content"}}
+<section>
+  <h1>Hello World!</h1>
+  <p>
+    Welcome to <a href="https://github.com/prologic/go-barecss">go-barecss</a>
+    a classical "Hello World" style Web App written in
+    <a href="https://golang.org">Go</a>.
+    using <a href="http://barecss.com/">Bare CSS</a>.
+  </p>
+  <o>This is an example of using a "classless" CSS library with a Go backend
+  server. It is completely responsive and will seamlessly resize on smaller
+  devices. There is even a Hamburger style navication bar that will collapse
+  automatically!
+  </p>
+  <p>
+    To try this out:
+    <pre>
+      <code class="lang-bash">
+        $ docker pull prologic/go-barecss
+        $ docker run -p 8000:8000 prologic/go-barecss
+      </code>
+    </pre>
+  </p>
+</section>
+{{end}}
